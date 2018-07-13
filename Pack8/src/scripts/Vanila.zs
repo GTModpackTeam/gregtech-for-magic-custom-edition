@@ -14,6 +14,7 @@ quartz.add(<appliedenergistics2:item.ItemMultiMaterial:10>);
 quartz.add(<appliedenergistics2:item.ItemMultiMaterial:11>);
 quartz.add(<appliedenergistics2:item.ItemMultiMaterial:12>);
 
+
 // --- Recipe Remove
 recipes.remove(<minecraft:planks:*>);
 recipes.remove(<minecraft:quartz_block>);
