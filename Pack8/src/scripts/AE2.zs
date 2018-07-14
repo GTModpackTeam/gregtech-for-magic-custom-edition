@@ -123,22 +123,9 @@ val TinyTNT = <appliedenergistics2:tile.BlockTinyTNT>;
 val ITNT = <IC2:blockITNT>;
 
 // --- Ore Dictionary
-val LVCircuit = <ore:LvCircuit>;
-LVCircuit.add(<gregtech:gt.metaitem.01:32701>);
-LVCircuit.add(<gregtech:gt.metaitem.03:32701>);
-LVCircuit.add(<IC2:itemPartCircuit>);
-val MVCircuit = <ore:MvCircuit>;
-MVCircuit.add(<gregtech:gt.metaitem.01:32702>);
-MVCircuit.add(<gregtech:gt.metaitem.03:32079>);
-MVCircuit.add(<gregtech:gt.metaitem.03:32080>);
-val HVCircuit = <ore:HvCircuit>;
-HVCircuit.add(<gregtech:gt.metaitem.01:32703>);
-HVCircuit.add(<gregtech:gt.metaitem.01:32082>);
-HVCircuit.add(<IC2:itemPartCircuitAdv>);
-val EVCircuit = <ore:EvCircuit>;
-EVCircuit.add(<gregtech:gt.metaitem.01:32704>);
-EVCircuit.add(<gregtech:gt.metaitem.01:32083>);
-EVCircuit.add(<gregtech:gt.metaitem.01:32085>);
+val LVCircuit = <ore:circuitBasic>;
+val MVCircuit = <ore:circuitGood>;
+val HVCircuit = <ore:circuitAdvanced>;
 
 
 // --- Removing Recipes
