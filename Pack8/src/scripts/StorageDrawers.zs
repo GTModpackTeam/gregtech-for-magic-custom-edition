@@ -5,11 +5,14 @@
 // Import
 import mods.storagedrawers.Compaction;
 
+
 // --- Variables
-var stone = <ore:stoneSmooth>;
+// --- Minecraft
 var comparator = <minecraft:comparator>;
+var stone = <ore:stoneSmooth>;
 var piston = <ore:craftingPiston>;
 
+//--- StorageDrawers
 var controllerSlave = <StorageDrawers:controllerSlave>;
 var controller = <StorageDrawers:controller>;
 
@@ -29,8 +32,16 @@ recipes.remove(controller);
 
 
 // --- Adding Recipes
-recipes.addShaped(controllerSlave, [[stone, stone, stone], [comparator, drawers, comparator], [stone, <ore:ingotGold>, stone]]);
-recipes.addShaped(controller, [[stone, stone, stone], [comparator, drawers, comparator], [stone, <IC2:itemPartIndustrialDiamond>, stone]]);
+recipes.addShaped(controllerSlave, [
+    [stone, stone, stone],
+    [comparator, drawers, comparator],
+    [stone, <ore:ingotGold>, stone]
+]);
+recipes.addShaped(controller, [
+    [stone, stone, stone],
+    [comparator, drawers, comparator],
+    [stone, <IC2:itemPartIndustrialDiamond>, stone]
+]);
 
 
 // --- Compact Recipes
