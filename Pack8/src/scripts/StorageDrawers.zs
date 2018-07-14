@@ -6,6 +6,17 @@
 import mods.storagedrawers.Compaction;
 
 
+// --- Variables
+// --- Minecraft
+var comparator = <minecraft:comparator>;
+var stone = <ore:stoneSmooth>;
+var piston = <ore:craftingPiston>;
+
+//--- StorageDrawers
+var controllerSlave = <StorageDrawers:controllerSlave>;
+var controller = <StorageDrawers:controller>;
+
+
 // --- Ore Dictionary
 val drawers = <ore:drawers>;
 drawers.add(<StorageDrawers:fullDrawers1:*>);
@@ -13,15 +24,6 @@ drawers.add(<StorageDrawers:fullDrawers2:*>);
 drawers.add(<StorageDrawers:fullDrawers4:*>);
 drawers.add(<StorageDrawers:halfDrawers4:*>);
 drawers.add(<StorageDrawers:halfDrawers4:*>);
-
-
-// --- Variables
-// --- Minecraft
-var stone = <ore:stoneSmooth>;
-var comparator = <minecraft:comparator>;
-var piston = <ore:craftingPiston>;
-var controllerSlave = <StorageDrawers:controllerSlave>;
-var controller = <StorageDrawers:controller>;
 
 
 // --- Removing Recipes

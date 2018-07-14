@@ -3,7 +3,7 @@
 
 
 
-// --- Recipe Remove
+// --- Removing Recipes
 recipes.remove(<ExtraUtilities:cobblestone_compressed:15>);
 recipes.remove(<ExtraUtilities:cobblestone_compressed:14>);
 recipes.remove(<ExtraUtilities:cobblestone_compressed:13>);
@@ -48,7 +48,6 @@ recipes.remove(<ExtraUtilities:angelRing:3>);
 recipes.remove(<ExtraUtilities:angelRing:2>);
 recipes.remove(<ExtraUtilities:angelRing:1>);
 recipes.remove(<ExtraUtilities:angelRing>);
-
 recipes.removeShapeless(<ExtraUtilities:nodeUpgrade:1>, [
     <ore:dustRedstone>, <ore:stickWood>, <ore:dustRedstone>,
     <ore:stickWood>, <minecraft:string>, <ore:stickWood>,
@@ -56,22 +55,7 @@ recipes.removeShapeless(<ExtraUtilities:nodeUpgrade:1>, [
 ]);
 
 
-// --- Recipe Shapeless
-recipes.addShapeless(<ExtraUtilities:angelRing:4>, [
-    <ExtraUtilities:angelRing>, <minecraft:gold_nugget>, <minecraft:gold_nugget>
-]);
-recipes.addShapeless(<ExtraUtilities:angelRing:3>,
-    [<ExtraUtilities:angelRing>, <minecraft:leather>, <minecraft:leather>
-]);
-recipes.addShapeless(<ExtraUtilities:angelRing:2>, [
-    <ExtraUtilities:angelRing>, <ore:dyePink>, <ore:dyePurple>
-]);
-recipes.addShapeless(<ExtraUtilities:angelRing:1>, [
-    <ExtraUtilities:angelRing>, <ore:craftingFeather>, <ore:craftingFeather>
-]);
-
-
-// --- Recipe Adding
+// --- Adding Recipes
 recipes.addShaped(<ExtraUtilities:watering_can:1>, [
     [<gregtech:gt.metaitem.01:22305>, <IC2:itemFertilizer>, null],
     [<gregtech:gt.metaitem.01:22305>, <minecraft:bowl>, <gregtech:gt.metaitem.01:22305>],
@@ -191,6 +175,12 @@ recipes.addShaped(<ExtraUtilities:angelRing>, [
     [<ore:plateNetherStar>, <Thaumcraft:HoverHarness>, <ore:plateNetherStar>],
     [<ore:plateNaquadria>, <ore:ringHSSG>, <ore:plateNaquadria>]
 ]);
+
+// --- Recipe Shapeless
+recipes.addShapeless(<ExtraUtilities:angelRing:4>, [<ExtraUtilities:angelRing>, <minecraft:gold_nugget>, <minecraft:gold_nugget>]);
+recipes.addShapeless(<ExtraUtilities:angelRing:3>, [<ExtraUtilities:angelRing>, <minecraft:leather>, <minecraft:leather>]);
+recipes.addShapeless(<ExtraUtilities:angelRing:2>, [<ExtraUtilities:angelRing>, <ore:dyePink>, <ore:dyePurple>]);
+recipes.addShapeless(<ExtraUtilities:angelRing:1>, [<ExtraUtilities:angelRing>, <ore:craftingFeather>, <ore:craftingFeather>]);
 
 
 // --- Cutting Saw

@@ -14,6 +14,26 @@ import mods.gregtech.Wiremill;
 
 
 // --- Variables
+val Storage1K = <appliedenergistics2:item.ItemBasicStorageCell.1k>;
+val Storage4K = <appliedenergistics2:item.ItemBasicStorageCell.4k>;
+val Storage16K = <appliedenergistics2:item.ItemBasicStorageCell.16k>;
+val Storage64K = <appliedenergistics2:item.ItemBasicStorageCell.64k>;
+val UStorageHousing = <appliedenergistics2:item.ItemMultiMaterial:39>;
+val StorageComponent1K = <appliedenergistics2:item.ItemMultiMaterial:35>;
+val StorageComponent4K = <appliedenergistics2:item.ItemMultiMaterial:36>;
+val StorageComponent16K = <appliedenergistics2:item.ItemMultiMaterial:37>;
+val StorageComponent64K = <appliedenergistics2:item.ItemMultiMaterial:38>;
+val CertusCircuit = <appliedenergistics2:item.ItemMultiMaterial:23>;
+val CalculationCircuit = <appliedenergistics2:item.ItemMultiMaterial:16>;
+val GoldCircuit = <appliedenergistics2:item.ItemMultiMaterial:22>;
+val LogicCircuit = <appliedenergistics2:item.ItemMultiMaterial:18>;
+val DiamondCircuit = <appliedenergistics2:item.ItemMultiMaterial:17>;
+val EngineeringCircuit = <appliedenergistics2:item.ItemMultiMaterial:24>;
+var PrintedSilicon = <appliedenergistics2:item.ItemMultiMaterial:20>;
+var CalculationPress = <appliedenergistics2:item.ItemMultiMaterial:13>;
+var LogicPress = <appliedenergistics2:item.ItemMultiMaterial:15>;
+var EngineeringPress = <appliedenergistics2:item.ItemMultiMaterial:14>;
+var SiliconPress = <appliedenergistics2:item.ItemMultiMaterial:19>;
 val FluixBlock = <appliedenergistics2:tile.BlockFluix>;
 val CertusQBlock = <appliedenergistics2:tile.BlockQuartz>;
 val CCrtusQBlock = <appliedenergistics2:tile.BlockQuartzChiseled>;
@@ -26,7 +46,6 @@ val Interface = <appliedenergistics2:item.ItemMultiPart:440>;
 val CraftingUnit = <appliedenergistics2:tile.BlockCraftingUnit>;
 val CoCraftingUnit = <appliedenergistics2:tile.BlockCraftingUnit:1>;
 val SkyStone = <appliedenergistics2:tile.BlockSkyStone>;
-
 val CrystalAccelerator = <appliedenergistics2:tile.BlockQuartzGrowthAccelerator>;
 val MolecularAssembler = <appliedenergistics2:tile.BlockMolecularAssembler>;
 val Charger = <appliedenergistics2:tile.BlockCharger>;
@@ -41,92 +60,41 @@ val FluixCoveredC = <appliedenergistics2:item.ItemMultiPart:36>;
 val FormationCore = <appliedenergistics2:item.ItemMultiMaterial:43>;
 val AnnihilationCore = <appliedenergistics2:item.ItemMultiMaterial:44>;
 val WirelessReceiver = <appliedenergistics2:item.ItemMultiMaterial:41>;
-val Quartzite = <ore:gemQuartzite>;
 val FluixPearl = <appliedenergistics2:item.ItemMultiMaterial:9>;
+val QuartzFixture = <appliedenergistics2:tile.BlockQuartzTorch>;
+val LightDetector = <appliedenergistics2:tile.BlockLightDetector>;
+val Terminal = <appliedenergistics2:item.ItemMultiPart:380>;
+val CraftingTerminal = <appliedenergistics2:item.ItemMultiPart:360>;
+val InterfaceTerminal = <appliedenergistics2:item.ItemMultiPart:480>;
+val PatternTerminal = <appliedenergistics2:item.ItemMultiPart:340>;
+val WirelessTerminal = <appliedenergistics2:item.ToolWirelessTerminal>;
+val QuartzFiber = <appliedenergistics2:item.ItemMultiPart:140>;
+val Illuminated = <appliedenergistics2:item.ItemMultiPart:180>;
+val QuartzGlass = <appliedenergistics2:tile.BlockQuartzGlass>;
+val VibrantQGlass =<appliedenergistics2:tile.BlockQuartzLamp>;
+val Pattern = <appliedenergistics2:item.ItemMultiMaterial:52>;
+val Quartzite = <ore:gemQuartzite>;
 val EnderEyeRod = <ore:stickEnderEye>;
 val EnderEyePlate = <ore:plateEnderEye>;
 val EnderPearl = <ore:gemEnderPearl>;
-val QuartzFixture = <appliedenergistics2:tile.BlockQuartzTorch>;
-val LightDetector = <appliedenergistics2:tile.BlockLightDetector>;
-val TinyTNT = <appliedenergistics2:tile.BlockTinyTNT>;
-val ITNT = <IC2:blockITNT>;
 
+// --- GregTech
 val HVMachineHull = <gregtech:gt.blockmachines:12>;
 val AdvElectrolyzer = <gregtech:gt.blockmachines:372>;
 val AlCable = <ore:cableGt08Aluminium>;
 val CopperCable = <ore:cableGt01Copper>;
 val PlatinumCable = <ore:cableGt04Platinum>;
 val AdvAssembler = <gregtech:gt.blockmachines:212>;
-
 val NANDChip = <gregtech:gt.metaitem.01:32700>;
 val BasicCircuit = <gregtech:gt.metaitem.01:32701>;
 val GoodCircuit = <gregtech:gt.metaitem.01:32702>;
 val AdvCircuit = <gregtech:gt.metaitem.01:32703>;
 val DataCircuit = <gregtech:gt.metaitem.01:32704>;
-val LVCircuit = <ore:LvCircuit>;
-LVCircuit.add(<gregtech:gt.metaitem.01:32701>);
-LVCircuit.add(<gregtech:gt.metaitem.03:32701>);
-LVCircuit.add(<IC2:itemPartCircuit>);
-val MVCircuit = <ore:MvCircuit>;
-MVCircuit.add(<gregtech:gt.metaitem.01:32702>);
-MVCircuit.add(<gregtech:gt.metaitem.03:32079>);
-MVCircuit.add(<gregtech:gt.metaitem.03:32080>);
-val HVCircuit = <ore:HvCircuit>;
-HVCircuit.add(<gregtech:gt.metaitem.01:32703>);
-HVCircuit.add(<gregtech:gt.metaitem.01:32082>);
-HVCircuit.add(<IC2:itemPartCircuitAdv>);
-val EVCircuit = <ore:EvCircuit>;
-EVCircuit.add(<gregtech:gt.metaitem.01:32704>);
-EVCircuit.add(<gregtech:gt.metaitem.01:32083>);
-EVCircuit.add(<gregtech:gt.metaitem.01:32085>);
 val EFlow = <gregtech:gt.metaitem.01:32706>;
-
 val StainlessPlate = <ore:plateStainlessSteel>;
 val EVBatBuffer = <gregtech:gt.blockmachines:194>;
-
-val Terminal = <appliedenergistics2:item.ItemMultiPart:380>;
-val CraftingTerminal = <appliedenergistics2:item.ItemMultiPart:360>;
-val InterfaceTerminal = <appliedenergistics2:item.ItemMultiPart:480>;
-val PatternTerminal = <appliedenergistics2:item.ItemMultiPart:340>;
-val WirelessTerminal = <appliedenergistics2:item.ToolWirelessTerminal>;
-
-val QuartzFiber = <appliedenergistics2:item.ItemMultiPart:140>;
-val Illuminated = <appliedenergistics2:item.ItemMultiPart:180>;
-val QuartzGlass = <appliedenergistics2:tile.BlockQuartzGlass>;
-val VibrantQGlass =<appliedenergistics2:tile.BlockQuartzLamp>;
-val Pattern = <appliedenergistics2:item.ItemMultiMaterial:52>;
 val GlowstonePlate = <ore:plateGlowstone>;
 val GlowstoneDust = <ore:dustGlowstone>;
-
-val Storage1K = <appliedenergistics2:item.ItemBasicStorageCell.1k>;
-val Storage4K = <appliedenergistics2:item.ItemBasicStorageCell.4k>;
-val Storage16K = <appliedenergistics2:item.ItemBasicStorageCell.16k>;
-val Storage64K = <appliedenergistics2:item.ItemBasicStorageCell.64k>;
-
-val UStorageHousing = <appliedenergistics2:item.ItemMultiMaterial:39>;
-val StorageComponent1K = <appliedenergistics2:item.ItemMultiMaterial:35>;
-val StorageComponent4K = <appliedenergistics2:item.ItemMultiMaterial:36>;
-val StorageComponent16K = <appliedenergistics2:item.ItemMultiMaterial:37>;
-val StorageComponent64K = <appliedenergistics2:item.ItemMultiMaterial:38>;
-
-val Saw = <ore:craftingToolSaw>;
-val Screwdriver = <ore:craftingToolScrewdriver>;
-val SHammer = <ore:craftingToolSoftHammer>;
-val HHammer = <ore:craftingToolHardHammer>;
-
-val CertusCircuit = <appliedenergistics2:item.ItemMultiMaterial:23>;
-val CalculationCircuit = <appliedenergistics2:item.ItemMultiMaterial:16>;
-val GoldCircuit = <appliedenergistics2:item.ItemMultiMaterial:22>;
-val LogicCircuit = <appliedenergistics2:item.ItemMultiMaterial:18>;
-val DiamondCircuit = <appliedenergistics2:item.ItemMultiMaterial:17>;
-val EngineeringCircuit = <appliedenergistics2:item.ItemMultiMaterial:24>;
-var PrintedSilicon = <appliedenergistics2:item.ItemMultiMaterial:20>;
-
-var CalculationPress = <appliedenergistics2:item.ItemMultiMaterial:13>;
-var LogicPress = <appliedenergistics2:item.ItemMultiMaterial:15>;
-var EngineeringPress = <appliedenergistics2:item.ItemMultiMaterial:14>;
-var SiliconPress = <appliedenergistics2:item.ItemMultiMaterial:19>;
-
 val SteelPlate = <ore:plateSteel>;
 val AluminiumPlate = <ore:plateAluminium>;
 val TitaniumPlate = <ore:plateTitanium>;
@@ -145,7 +113,32 @@ val MSteelRod = <ore:stickSteelMagnetic>;
 val CertusQuartz = <ore:gemCertusQuartz>;
 val ALRod = <ore:stickAluminium>;
 val IronRod = <ore:stickIron>;
+val Saw = <ore:craftingToolSaw>;
+val Screwdriver = <ore:craftingToolScrewdriver>;
+val SHammer = <ore:craftingToolSoftHammer>;
+val HHammer = <ore:craftingToolHardHammer>;
 
+// --- IC2
+val TinyTNT = <appliedenergistics2:tile.BlockTinyTNT>;
+val ITNT = <IC2:blockITNT>;
+
+// --- Ore Dictionary
+val LVCircuit = <ore:LvCircuit>;
+LVCircuit.add(<gregtech:gt.metaitem.01:32701>);
+LVCircuit.add(<gregtech:gt.metaitem.03:32701>);
+LVCircuit.add(<IC2:itemPartCircuit>);
+val MVCircuit = <ore:MvCircuit>;
+MVCircuit.add(<gregtech:gt.metaitem.01:32702>);
+MVCircuit.add(<gregtech:gt.metaitem.03:32079>);
+MVCircuit.add(<gregtech:gt.metaitem.03:32080>);
+val HVCircuit = <ore:HvCircuit>;
+HVCircuit.add(<gregtech:gt.metaitem.01:32703>);
+HVCircuit.add(<gregtech:gt.metaitem.01:32082>);
+HVCircuit.add(<IC2:itemPartCircuitAdv>);
+val EVCircuit = <ore:EvCircuit>;
+EVCircuit.add(<gregtech:gt.metaitem.01:32704>);
+EVCircuit.add(<gregtech:gt.metaitem.01:32083>);
+EVCircuit.add(<gregtech:gt.metaitem.01:32085>);
 
 
 // --- Removing Recipes

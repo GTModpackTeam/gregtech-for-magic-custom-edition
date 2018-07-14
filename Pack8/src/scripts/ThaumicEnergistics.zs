@@ -47,12 +47,6 @@ var EntropyShard = <Thaumcraft:ItemShard:5>;
 var BalancedShard = <Thaumcraft:ItemShard:6>;
 
 // --- GregTech
-val SteelPlate = <ore:plateSteel>;
-val AluminiumPlate = <ore:plateAluminium>;
-val StainlessPlate = <ore:plateStainlessSteel>;
-val TitaniumPlate = <ore:plateTitanium>;
-var ThaumiumPlate = <ore:plateThaumium>;
-val QuartziteScrew = <ore:screwQuartzite>;
 val CertusPlate = <gregtech:gt.metaitem.01:17516>;
 val NQuartzPlate = <gregtech:gt.metaitem.01:17522>;
 var NetherCertusRod = <gregtech:gt.metaitem.01:23522>;
@@ -61,11 +55,17 @@ val BasicCircuit = <gregtech:gt.metaitem.01:32701>;
 val GoodCircuit = <gregtech:gt.metaitem.01:32702>;
 val AdvCircuit = <gregtech:gt.metaitem.01:32703>;
 val DataCircuit = <gregtech:gt.metaitem.01:32704>;
+val SteelPlate = <ore:plateSteel>;
+val AluminiumPlate = <ore:plateAluminium>;
+val StainlessPlate = <ore:plateStainlessSteel>;
+val TitaniumPlate = <ore:plateTitanium>;
+var ThaumiumPlate = <ore:plateThaumium>;
+val QuartziteScrew = <ore:screwQuartzite>;
 val Screwdriver = <ore:craftingToolScrewdriver>;
 val HHammer = <ore:craftingToolHardHammer>;
 
 
-// --- Removing OreDictionary
+// --- Ore Dictionary
 <ore:gearIron>.remove(<thaumicenergistics:material:2>);
 
 
@@ -147,6 +147,7 @@ recipes.addShaped(Storage64K, [
     [TitaniumPlate, StorageComponent64K, TitaniumPlate],
     [QuartziteScrew, TitaniumPlate, HHammer]
 ]);
+
 
 // --- Recycle EStorageHousing
 mods.gregtech.Pulverizer.addRecipe([
