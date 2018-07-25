@@ -8,11 +8,12 @@ import mods.extraUtils.QED;
 
 
 // --- Ore Dictionary
-val quartz = <ore:quartz>;
+var quartz = <ore:quartz>;
 quartz.add(<minecraft:quartz>);
 quartz.add(<appliedenergistics2:item.ItemMultiMaterial:10>);
 quartz.add(<appliedenergistics2:item.ItemMultiMaterial:11>);
 quartz.add(<appliedenergistics2:item.ItemMultiMaterial:12>);
+
 
 // --- Recipe Remove
 recipes.remove(<minecraft:planks:*>);
@@ -53,7 +54,6 @@ recipes.addShapeless(<minecraft:planks:3>, [<minecraft:log:3>]);
 recipes.addShapeless(<minecraft:planks:2>, [<minecraft:log:2>]);
 recipes.addShapeless(<minecraft:planks:1>, [<minecraft:log:1>]);
 recipes.addShapeless(<minecraft:planks:0>, [<minecraft:log:0>]);
-
 recipes.addShaped(<minecraft:comparator>, [
     [null, <minecraft:redstone_torch>, null],
     [<minecraft:redstone_torch>, quartz, <minecraft:redstone_torch>],

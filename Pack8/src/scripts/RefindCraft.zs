@@ -3,17 +3,19 @@
 
 
 // --- Variables
+// --- Minecraft
 var stone = <ore:stoneSmooth>;
 var comparator = <minecraft:comparator>;
-var piston = <ore:craftingPiston>;
 var table = <minecraft:crafting_table>;
 var furnace = <minecraft:furnace>;
+var piston = <ore:craftingPiston>;
 
+// --- StorageDrawers
 var compDrawer = <StorageDrawers:compDrawers>;
 
 
 // --- Ore Dictionary
-val drawers = <ore:drawers>;
+var drawers = <ore:drawers>;
 drawers.add(<StorageDrawers:fullDrawers1:*>);
 drawers.add(<StorageDrawers:fullDrawers2:*>);
 drawers.add(<StorageDrawers:fullDrawers4:*>);
