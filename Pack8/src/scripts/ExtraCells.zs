@@ -245,7 +245,7 @@ recipes.addShaped(<extracells:storage.component:1>, [
 recipes.addShaped(<extracells:storage.component>, [
     [<ore:circuitData>, <appliedenergistics2:item.ItemMultiMaterial:38>, <ore:circuitData>],
     [<appliedenergistics2:item.ItemMultiMaterial:38>, <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:38>],
-    [<gregtech:gt.metaitem.01:32704>, <appliedenergistics2:item.ItemMultiMaterial:38>, <ore:circuitData>]
+    [<ore:circuitData>, <appliedenergistics2:item.ItemMultiMaterial:38>, <ore:circuitData>]
 ]);
 
 // --- Recipe Shapeless
