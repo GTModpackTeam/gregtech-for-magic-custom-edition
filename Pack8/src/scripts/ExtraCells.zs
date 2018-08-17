@@ -228,9 +228,9 @@ recipes.addShaped(<extracells:ecbaseblock>, [
     [<gregtech:gt.metaitem.01:17306>, <ore:plateGlass>, <ore:plateSteel>]
 ]);
 recipes.addShaped(<extracells:storage.component:3>, [
-    [<gregtech:gt.metaitem.01:32706>, <extracells:storage.component:2>, <gregtech:gt.metaitem.01:32706>],
+    [<ore:circuitMaster>, <extracells:storage.component:2>, <ore:circuitMaster>],
     [<extracells:storage.component:2>, <appliedenergistics2:item.ItemMultiMaterial:23>, <extracells:storage.component:2>],
-    [<gregtech:gt.metaitem.01:32706>, <extracells:storage.component:2>, <gregtech:gt.metaitem.01:32706>]
+    [<ore:circuitMaster>, <extracells:storage.component:2>, <ore:circuitMaster>]
 ]);
 recipes.addShaped(<extracells:storage.component:2>, [
     [<gregtech:gt.metaitem.01:32707>, <extracells:storage.component:1>, <gregtech:gt.metaitem.01:32707>],
